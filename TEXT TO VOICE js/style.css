@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #2b1055, #7597de);
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #db03f4, #478969);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+    transition: background 0.8s ease;
+}
+
+.hero:hover {
+    background: linear-gradient(135deg, #478969, #db03f4);
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: transform 0.5s;
+}
+
+.hero h1:hover {
+    transform: scale(1.05);
+    color: #e6e600;
+}
+
+.hero h1 span {
+    color: #ff33cc;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+textarea {
+    width: 600px;
+    height: 250px;
+    background: linear-gradient(145deg, #ffffff, #f2f4f5);
+    color: #42c5ab;
+    font-size: 20px;
+    border: 0;
+    outline: 0;
+    padding: 25px;
+    border-radius: 20px;
+    resize: none;
+    margin-bottom: 50px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+textarea:focus {
+    box-shadow: 3px 3px 15px rgba(66, 197, 171, 0.6);
+    transform: scale(1.02);
+}
+
+textarea::placeholder {
+    color: #a39de6;
+    font-size: 20px;
+}
+
+.row {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    background: linear-gradient(135deg, #7f0bd2, #d006a2);
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s ease;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #d006a2, #7f0bd2);
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+button img {
+    width: 16px;
+    margin-right: 12px;
+}
+
+select {
+    flex: 1;
+    color: #3d5a80;
+    height: 51px;
+    background: linear-gradient(135deg, #ffffff, #e0e0e0);
+    padding: 0px 35px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 35px;
+    appearance: none;
+    background-image: url('arrow-down-sign-to-navigate.png');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: calc(100% - 20px);
+    background-position-y: 50%;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+select:hover, select:focus {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
